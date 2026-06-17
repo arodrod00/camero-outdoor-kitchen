@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camero Outdoor Kitchen — Miami</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Camero Outdoor Kitchen — Cocinas exteriores personalizadas en Miami, FL. Diseño 100% custom, acero inoxidable, instalación profesional en Miami-Dade. Custom outdoor kitchens. Call (786) 282-4653." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://camerooutdoorkitchen.com/" />
+
+  <!-- Open Graph (WhatsApp / Facebook / Instagram previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Camero Outdoor Kitchen — Miami" />
+  <meta property="og:description" content="Custom outdoor kitchens in Miami, FL. Design, fabrication and professional installation across Miami-Dade. Call (786) 282-4653." />
+  <meta property="og:url" content="https://camerooutdoorkitchen.com/" />
+  <meta property="og:image" content="https://camerooutdoorkitchen.com/assets/images/p1.jpg" />
+  <meta property="og:locale" content="es_US" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Camero Outdoor Kitchen — Miami" />
+  <meta name="twitter:description" content="Custom outdoor kitchens in Miami. Professional design and installation." />
+  <meta name="twitter:image" content="https://camerooutdoorkitchen.com/assets/images/p1.jpg" />
+
+  <!-- Favicon — C dorado inline SVG, sin archivo externo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23c9a84c'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial Black%2CArial' font-weight='900' font-size='22' fill='%230a0a0a'%3EC%3C/text%3E%3C/svg%3E" />
+
+  <!-- Schema.org LocalBusiness — clave para Google Maps y búsquedas locales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Camero Outdoor Kitchen",
+    "telephone": "+17862824653",
+    "url": "https://camerooutdoorkitchen.com",
+    "image": "https://camerooutdoorkitchen.com/assets/images/p1.jpg",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Miami",
+      "addressRegion": "FL",
+      "postalCode": "33101",
+      "addressCountry": "US"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 25.7617, "longitude": -80.1918 },
+    "areaServed": { "@type": "City", "name": "Miami" },
+    "sameAs": ["https://www.instagram.com/outdoor_kitchen97/"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Outdoor Kitchen Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Outdoor Kitchen Design & Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Grill Station Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outdoor Kitchen Renovation Miami" } }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Solo regular — bold no se usa en el sitio (ahorra 1 request CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Fixed video background ── -->
+  <div class="video-wrap">
+    <video id="bgVideo" muted playsinline webkit-playsinline preload="metadata" aria-hidden="true">
+      <source src="assets/video/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- ── Progress bar ── -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="nav-logo-mark">C</span>
+      <span class="nav-logo-text">CAMERO</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#servicios" data-i18n="nav.servicios">Servicios</a></li>
+      <li><a href="#proceso" data-i18n="nav.proceso">Proceso</a></li>
+      <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
+      <li><a href="#contacto" class="nav-cta" data-i18n="nav.cotizar">Cotizar</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <button class="nav-burger" id="navBurger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Scroll driver ── -->
+  <main class="scroll-driver">
+
+    <!-- ─ HERO ─ -->
+    <section class="section section--hero" id="inicio">
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Miami · Cocinas Exteriores</p>
+        <h1 class="hero-title">CAMERO<br/><span>OUTDOOR</span><br/>KITCHEN</h1>
+        <p class="hero-sub" data-i18n-html="hero.sub">Construimos cocinas exteriores personalizadas.<br/>Diseño, durabilidad y estilo para tu espacio.</p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn--primary" data-i18n="hero.cta.primary">Solicitar cotización</a>
+          <a href="#servicios" class="btn btn--ghost" data-i18n="hero.cta.ghost">Ver servicios</a>
+        </div>
+        <div class="hero-scroll-hint">
+          <span data-i18n="hero.scroll">Scroll para explorar</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label" data-i18n="hero.stat.custom">Personalizado</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">Miami</span>
+          <span class="stat-label" data-i18n="hero.stat.based">Based</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─ SERVICIOS ─ -->
+    <section class="section section--services" id="servicios">
+      <div class="section-inner">
+        <div class="section-label" data-i18n="svc.label">Lo que construimos</div>
+        <h2 class="section-title" data-i18n="svc.title">Nuestros Servicios</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon"><i class="ph ph-flame" aria-hidden="true"></i></div>
+            <h3 data-i18n="svc.grill.title">Estaciones de Parrilla</h3>
+            <p data-i18n="svc.grill.desc">Módulos con grill integrado de alta potencia, resistentes a la intemperie. Diseño robusto para uso diario.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="ph ph-cooking-pot" aria-hidden="true"></i></div>
+            <h3 data-i18n="svc.kitchen.title">Cocinas Completas</h3>
+            <p data-i18n="svc.kitchen.desc">Cocinas exteriores con countertop, gabinetes, grill, fregadero y refrigerador en un solo conjunto.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="ph ph-drop" aria-hidden="true"></i></div>
+            <h3 data-i18n="svc.sink.title">Módulo de Fregadero</h3>
+            <p data-i18n="svc.sink.desc">Estaciones con fregadero de acero inoxidable y grifo. Perfectas para completar tu outdoor kitchen.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="ph ph-snowflake" aria-hidden="true"></i></div>
+            <h3 data-i18n="svc.fridge.title">Módulo Refrigerador</h3>
+            <p data-i18n="svc.fridge.desc">Gabinetes con refrigerador outdoor integrado, construidos para el clima de Florida.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="ph ph-wrench" aria-hidden="true"></i></div>
+            <h3 data-i18n="svc.custom.title">Diseño 100% Custom</h3>
+            <p data-i18n="svc.custom.desc">Medidas, acabados, layout y combinaciones adaptadas a tu espacio. Sin proyectos iguales.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="ph ph-map-pin" aria-hidden="true"></i></div>
+            <h3 data-i18n="svc.install.title">Instalación en Miami</h3>
+            <p data-i18n="svc.install.desc">Servicio completo de instalación en toda el área de Miami-Dade. Rápido, limpio y profesional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─ PROCESO ─ -->
+    <section class="section section--process" id="proceso">
+      <div class="section-inner">
+        <div class="section-label" data-i18n="proc.label">Cómo trabajamos</div>
+        <h2 class="section-title" data-i18n="proc.title">El Proceso</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h3 data-i18n="proc.step1.title">Consulta Gratis</h3>
+              <p data-i18n="proc.step1.desc">Nos contactas por teléfono o WhatsApp. Evaluamos tu espacio, tus necesidades y te asesoramos sin costo.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3 data-i18n="proc.step2.title">Diseño y Cotización</h3>
+              <p data-i18n="proc.step2.desc">Te presentamos el diseño personalizado con materiales, dimensiones y precio final. Sin sorpresas.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3 data-i18n="proc.step3.title">Fabricación</h3>
+              <p data-i18n="proc.step3.desc">Construimos tu cocina con los mejores materiales: panels corrugados, acero inoxidable y countertop de calidad.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <h3 data-i18n="proc.step4.title">Instalación</h3>
+              <p data-i18n="proc.step4.desc">Instalamos en tu propiedad en Miami. Terminamos limpio y te hacemos el walkthrough completo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─ GALERIA ─ -->
+    <section class="section section--gallery" id="galeria">
+      <div class="section-inner">
+        <div class="section-label" data-i18n="gal.label">Trabajo real</div>
+        <h2 class="section-title" data-i18n="gal.title">Proyectos Completados</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/p6.jpg" alt="Cocina exterior cubierta con countertop de granito gris y vigas de madera" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/p9.jpg" alt="Cocina exterior lineal de acero inoxidable con vista al lago" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/p8.jpg" alt="Cocina exterior moderna blanca bajo techo de madera con abanico" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/p7.jpg" alt="Cocina exterior blanca en L con techo de madera y ventilador" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/p1.jpg" alt="Cocina exterior en L con gabinetes y countertop de granito" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/p2.jpg" alt="Outdoor kitchen con countertop de granito y grill integrado" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/p3.jpg" alt="Cocina exterior L-shape con grill y zona de estar" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/p4.jpg" alt="Estación de grill con revestimiento de piedra y pergola" loading="lazy" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/p5.jpg" alt="Cocina exterior travertino con grill de acero inoxidable" loading="lazy" />
+          </div>
+        </div>
+        <div class="gallery-cta">
+          <p data-i18n="gal.cta.text">Sigue nuestro trabajo en Instagram</p>
+          <a href="https://instagram.com/outdoor_kitchen97" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+            <i class="ph ph-instagram-logo" aria-hidden="true"></i>&nbsp;<span data-i18n="gal.cta.btn">@outdoor_kitchen97</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─ SHOWCASE ─ -->
+    <section class="section section--showcase" id="showcase">
+      <div class="showcase-content">
+        <p class="showcase-eyebrow" data-i18n="showcase.eyebrow">El resultado final</p>
+        <h2 class="showcase-title" data-i18n-html="showcase.title">Así luce tu<br/>espacio exterior</h2>
+        <a href="#contacto" class="btn btn--primary" data-i18n="showcase.btn">Quiero el mío</a>
+      </div>
+    </section>
+
+    <!-- ─ CONTACTO ─ -->
+    <section class="section section--contact" id="contacto">
+      <div class="section-inner section-inner--contact">
+        <div class="contact-left">
+          <div class="section-label" data-i18n="contact.label">Hablemos</div>
+          <h2 class="section-title" data-i18n-html="contact.title">Solicita tu<br/>Cotización</h2>
+          <p class="contact-desc" data-i18n="contact.desc">Contáctanos directamente por WhatsApp o llámanos. Sin compromiso, te asesoramos gratis.</p>
+          <div class="contact-methods">
+            <a href="https://wa.me/17862824653" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <div class="contact-method-icon"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i></div>
+              <div>
+                <span class="contact-method-label" data-i18n="contact.wa.label">WhatsApp</span>
+                <span class="contact-method-value">(786) 282-4653</span>
+              </div>
+            </a>
+            <a href="tel:+17862824653" class="contact-method">
+              <div class="contact-method-icon"><i class="ph ph-phone" aria-hidden="true"></i></div>
+              <div>
+                <span class="contact-method-label" data-i18n="contact.phone.label">Llamar</span>
+                <span class="contact-method-value">(786) 282-4653</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/outdoor_kitchen97" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <div class="contact-method-icon"><i class="ph ph-instagram-logo" aria-hidden="true"></i></div>
+              <div>
+                <span class="contact-method-label" data-i18n="contact.ig.label">Instagram</span>
+                <span class="contact-method-value">@outdoor_kitchen97</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" data-i18n="form.name.label">Nombre</label>
+              <input type="text" id="name" name="name" data-i18n-ph="form.name.ph" placeholder="Tu nombre" required maxlength="100" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="form.phone.label">Teléfono / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" data-i18n-ph="form.phone.ph" placeholder="(786) 000-0000" required maxlength="20" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="service" data-i18n="form.service.label">Servicio de interés</label>
+              <select id="service" name="service">
+                <option value="" data-i18n="form.service.default">Selecciona un servicio</option>
+                <option data-i18n="form.service.1">Cocina exterior completa</option>
+                <option data-i18n="form.service.2">Estación de parrilla</option>
+                <option data-i18n="form.service.3">Módulo con fregadero</option>
+                <option data-i18n="form.service.4">Módulo con refrigerador</option>
+                <option data-i18n="form.service.5">Diseño personalizado</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form.message.label">Cuéntanos de tu proyecto</label>
+              <textarea id="message" name="message" rows="4" data-i18n-ph="form.message.ph" placeholder="Tamaño del espacio, estilo, presupuesto..." maxlength="1000"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn" data-i18n="form.submit">Enviar solicitud</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Legal Disclaimers ── -->
+  <section class="legal" id="legal">
+    <div class="legal-inner">
+      <h2 class="legal-title" data-i18n="legal.title">Aviso Legal &amp; Términos</h2>
+      <div class="legal-grid">
+
+        <div class="legal-block">
+          <div class="legal-block-header">
+            <i class="ph ph-info" aria-hidden="true"></i>
+            <h3 data-i18n="legal.block1.title">Sobre los proyectos mostrados</h3>
+          </div>
+          <p data-i18n="legal.block1.p">Las imágenes y proyectos publicados en este sitio son trabajos representativos realizados por Camero Outdoor Kitchen. Los resultados finales pueden variar según las dimensiones del espacio, los materiales seleccionados por el cliente y las condiciones del sitio de instalación.</p>
+        </div>
+
+        <div class="legal-block">
+          <div class="legal-block-header">
+            <i class="ph ph-file-text" aria-hidden="true"></i>
+            <h3 data-i18n="legal.block2.title">Cotizaciones y contratos</h3>
+          </div>
+          <p data-i18n="legal.block2.p">Los precios, materiales y plazos de entrega están sujetos a cambios sin previo aviso hasta que se emita una cotización formal por escrito y ambas partes la firmen. Solo el contrato escrito y firmado entre las partes es documento válido de acuerdo.</p>
+        </div>
+
+        <div class="legal-block">
+          <div class="legal-block-header">
+            <i class="ph ph-hard-hat" aria-hidden="true"></i>
+            <h3 data-i18n="legal.block3.title">Permisos y regulaciones</h3>
+          </div>
+          <p data-i18n="legal.block3.p">Ciertos trabajos de construcción e instalación pueden requerir permisos municipales según las ordenanzas de Miami-Dade County. Es responsabilidad del propietario verificar y obtener dichos permisos, salvo que se acuerde lo contrario por escrito en el contrato.</p>
+        </div>
+
+        <div class="legal-block">
+          <div class="legal-block-header">
+            <i class="ph ph-shield-check" aria-hidden="true"></i>
+            <h3 data-i18n="legal.block4.title">Limitación de responsabilidad</h3>
+          </div>
+          <p data-i18n="legal.block4.p">Camero Outdoor Kitchen no asume responsabilidad por daños derivados del uso inadecuado de los productos instalados, del incumplimiento de las instrucciones de mantenimiento, o de condiciones externas fuera de nuestro control.</p>
+        </div>
+
+        <div class="legal-block">
+          <div class="legal-block-header">
+            <i class="ph ph-lock" aria-hidden="true"></i>
+            <h3 data-i18n="legal.block5.title">Privacidad de datos</h3>
+          </div>
+          <p data-i18n="legal.block5.p">Este sitio no recopila datos personales de forma automatizada. La información enviada a través del formulario se utiliza exclusivamente para responder a su consulta y no es compartida con terceros.</p>
+        </div>
+
+        <div class="legal-block">
+          <div class="legal-block-header">
+            <i class="ph ph-scales" aria-hidden="true"></i>
+            <h3 data-i18n="legal.block6.title">Jurisdicción aplicable</h3>
+          </div>
+          <p data-i18n="legal.block6.p">Todos los servicios son prestados desde Miami, Florida. Para cualquier disputa se aplicará la ley del Estado de Florida, con jurisdicción exclusiva en los tribunales de Miami-Dade County.</p>
+        </div>
+
+      </div>
+      <p class="legal-footer-note">
+        <span data-i18n="legal.note">Última actualización: junio 2026. Para consultas legales contactar a</span> <strong>(786) 282-4653</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo-mark">C</span>
+        <div>
+          <p class="footer-name">Camero Outdoor Kitchen</p>
+          <p class="footer-location" data-i18n="footer.location">Miami, Florida</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#legal" data-i18n="footer.link.legal">Aviso Legal</a>
+        <a href="#contacto" data-i18n="footer.link.contact">Contacto</a>
+        <a href="https://instagram.com/outdoor_kitchen97" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Camero Outdoor Kitchen. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
